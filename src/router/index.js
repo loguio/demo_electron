@@ -1,8 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import PageOne from "../views/PageOne.vue";
+import PageTwo from "../views/PageTwo.vue";
 
 const routes = [
-    { path: '/todo-1', name: '???', component: ?? },
-    { path: '/todo-2', name: '??', component: ?? }
+    { path: '/', name: 'PageOne', component: PageOne },
+    { path: '/page-2', name: 'PageTwo', component: PageTwo }
 ];
 
 const router = createRouter({
