@@ -1,8 +1,8 @@
 {
   "name": "app_demo",
   "version": "1.0.0",
-  "description": "demo electron",
   "main": ".vite/build/main.js",
+  "description": "Demo electron",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Marius Bourse",
+  "author": "Marius bourse",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^7.9.0",
@@ -29,12 +29,14 @@
     "vite": "^5.4.20"
   },
   "dependencies": {
+    "axios": "^1.12.2",
+    "electron-log": "^5.4.3",
     "electron-squirrel-startup": "^1.0.1",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/loguio/demo_electron.git"
+    "url": "https://github.com/loguio/demo_electron"
   }
 }

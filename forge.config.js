@@ -17,22 +17,23 @@ module.exports = {
     },
     {
       name: "@electron-forge/maker-deb",
-      config: {},
+      config: {
+        productDescription: "Une application de démonstration avec ElectronJS",
+      },
     },
     {
       name: "@electron-forge/maker-rpm",
-      config: {},
+      config: {
+        productDescription: "Une application de démonstration avec ElectronJS",
+      },
     },
   ],
   plugins: [
     {
       name: "@electron-forge/plugin-vite",
       config: {
-        // `build` can specify multiple entry builds, which can be Main process, Preload scripts, Worker process, etc.
-        // If you are familiar with Vite configuration, it will look really familiar.
         build: [
           {
-            // `entry` is just an alias for `build.lib.entry` in the corresponding file of `config`.
             entry: "src/main.js",
             config: "vite.main.config.mjs",
             target: "main",
@@ -51,8 +52,6 @@ module.exports = {
         ],
       },
     },
-    // Fuses are used to enable/disable various Electron functionality
-    // at package time, before code signing the application
     new FusesPlugin({
       version: FuseVersion.V1,
       [FuseV1Options.RunAsNode]: false,
@@ -68,8 +67,8 @@ module.exports = {
       name: "@electron-forge/publisher-github",
       config: {
         repository: {
-          owner: "mon-compte",
-          name: "mon-repo",
+          owner: "roulios44",
+          name: "electronTP",
         },
         prerelease: false,
         draft: true,
