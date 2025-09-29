@@ -67,8 +67,8 @@ module.exports = {
       name: "@electron-forge/publisher-github",
       config: {
         repository: {
-          owner: "roulios44",
-          name: "electronTP",
+          owner: "loguio",
+          name: "demo_electron",
         },
         prerelease: false,
         draft: true,
